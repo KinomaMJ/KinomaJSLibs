@@ -1,4 +1,137 @@
 # KinomaJS BLE V2 API
+<x-app-info>
+    <table width="100%" border="1" cellspacing="4">
+        <tbody>
+            <tr>
+                <th width="20%" align="right">Module ID</th>
+                <td colspan="4">
+                    <id>kinoma/kpr/libraries/LowPAN/</id>
+                </td>
+            </tr>
+            <tr>
+                <th width="20%" align="right">Description</th>
+                <td colspan="4">
+                    <description>Bluetooth 4.0 Low Energy stack</description>
+                </td>
+            </tr>
+            <whitelisted>
+                <tr>
+                    <th align="right">Whitelisted</th>
+                    <td width="20%">Platform(s):</td>
+                    <td width="20%">
+                        <platforms>*</platforms>
+                    </td>
+                    <td width="20%">Variant(s):</td>
+                    <td width="20%">
+                        <variants>*</variants>
+                    </td>
+                </tr>
+            </whitelisted>
+            <blacklisted>
+                <tr>
+                    <th align="right">Blacklisted</th>
+                    <td>Platform(s):</td>
+                    <td>
+                        <platforms/>
+                    </td>
+                    <td>Variant(s):</td>
+                    <td>
+                        <variants>linux/bg3cd</variants>
+                    </td>
+                </tr>
+            </blacklisted>
+            <footprints>
+                <tr>
+                    <th align="right">Storage Footprint (bytes)</th>
+                    <th colspan="2">Platform</th>
+                    <th colspan="2">Binary Size</th>
+                </tr>
+                <footprint>
+                    <tr>
+                        <th align="right"/>
+                        <td colspan="2">
+                            <platform>mac</platform>
+                        </td>
+                        <td colspan="2">
+                            <fileSize>123123123</fileSize>
+                        </td>
+                    </tr>
+                </footprint>
+                <footprint>
+                    <tr>
+                        <th align="right"/>
+                        <td colspan="2">
+                            <platform>win</platform>
+                        </td>
+                        <td colspan="2">
+                            <fileSize>678678678</fileSize>
+                        </td>
+                    </tr>
+                </footprint>
+            </footprints>
+            <dependencies>
+                <tr>
+                    <th align="right">Dependencies</th>
+                    <th colspan="2" align="center">ID</th>
+                    <th align="center">Platform(s)</th>
+                    <th align="center">Variant(s)</th>
+                </tr>
+                <dependency>
+                    <tr>
+                        <th align="right"/>
+                        <td colspan="2">kinoma/kpr/extensions/fakextension/</td>
+                        <td align="center">
+                            <platforms>linux/aspen,linux/gtk</platforms>
+                        </td>
+                        <td align="center">
+                            <variants>*</variants>
+                        </td>
+                    </tr>
+                </dependency>
+            </dependencies>
+            <urls>
+                <tr>
+                    <th align="right">Related URLs</th>
+                    <th colspan="2" align="center">URL</th>
+                    <th colspan="2" align="center">Type</th>
+                </tr>
+                <url>
+                    <tr>
+                        <th align="right"/>
+                        <td colspan="2">
+                            <url>http://kinoma.com/develop/documentation/tutorials/ble-miselu-keyboard/</url>
+                        </td>
+                        <td colspan="2" align="center">
+                            <type>Tutorial</type>
+                        </td>
+                    </tr>
+                </url>
+                <url>
+                    <tr>
+                        <th align="right"/>
+                        <td colspan="2">
+                            <url>http://kinoma.com/develop/documentation/tutorials/ble-griffin-pm/</url>
+                        </td>
+                        <td colspan="2" align="center">
+                            <type>Tutorial</type>
+                        </td>
+                    </tr>
+                </url>
+                <url>
+                    <tr>
+                        <th align="right"/>
+                        <td colspan="2">
+                            <url>http://kinoma.com/develop/documentation/tutorials/ble-satechi-iq-plug/</url>
+                        </td>
+                        <td colspan="2" align="center">
+                            <type>Tutorial</type>
+                        </td>
+                    </tr>
+                </url>
+            </urls>
+        </tbody>
+    </table>
+</x-app-info>
 
 ## Overview
 The KinomaJS BLE V2 stack provides an alternate JavaScript API that supports more GATT features compared to the original [V1 BLE API](https://github.com/Kinoma/kinomajs/blob/master/kinoma/kpr/libraries/LowPAN/src/lowpan/ble.js). Notable improvements and features include:
@@ -833,136 +966,4 @@ Returns **true** if this BLE address is a resolvable private address.
 Returns the string representation of this BLE address.  <table width="100%" border="1" cellspacing="4">
 
 ##Metadata
-<x-app-info>
-	<table width="100%" border="0" cellspacing="4">
-		<tbody>
-			<tr>
-				<th width="20%" align="right">Module ID</th>
-				<td colspan="4">
-					<id>kinoma/kpr/libraries/LowPAN/</id>
-				</td>
-			</tr>
-			<tr>
-				<th width="20%" align="right">Description</th>
-				<td colspan="4">
-					<description>Bluetooth 4.0 Low Energy stack</description>
-				</td>
-			</tr>
-			<whitelisted>
-				<tr>
-					<th align="right">Whitelisted</th>
-					<td width="20%">Platform(s):</td>
-					<td width="20%">
-						<platforms>*</platforms>
-					</td>
-					<td width="20%">Variant(s):</td>
-					<td width="20%">
-						<variants>*</variants>
-					</td>
-				</tr>
-			</whitelisted>
-			<blacklisted>
-				<tr>
-					<th align="right">Blacklisted</th>
-					<td>Platform(s):</td>
-					<td>
-						<platforms/>
-					</td>
-					<td>Variant(s):</td>
-					<td>
-						<variants>linux/bg3cd</variants>
-					</td>
-				</tr>
-			</blacklisted>
-			<footprints>
-				<tr>
-					<th align="right">Storage Footprint (bytes)</th>
-					<th colspan="2">Platform</th>
-					<th colspan="2">Binary Size</th>
-				</tr>
-				<footprint>
-					<tr>
-						<th align="right"/>
-						<td colspan="2">
-							<platform>mac</platform>
-						</td>
-						<td colspan="2">
-							<fileSize>123123123</fileSize>
-						</td>
-					</tr>
-				</footprint>
-				<footprint>
-					<tr>
-						<th align="right"/>
-						<td colspan="2">
-							<platform>win</platform>
-						</td>
-						<td colspan="2">
-							<fileSize>678678678</fileSize>
-						</td>
-					</tr>
-				</footprint>
-			</footprints>
-			<dependencies>
-				<tr>
-					<th align="right">Dependencies</th>
-					<th colspan="2" align="center">ID</th>
-					<th align="center">Platform(s)</th>
-					<th align="center">Variant(s)</th>
-				</tr>
-				<dependency>
-					<tr>
-						<th align="right"/>
-						<td colspan="2">kinoma/kpr/extensions/fakextension/</td>
-						<td align="center">
-							<platforms>linux/aspen,linux/gtk</platforms>
-						</td>
-						<td align="center">
-							<variants>*</variants>
-						</td>
-					</tr>
-				</dependency>
-			</dependencies>
-			<urls>
-				<tr>
-					<th align="right">Related URLs</th>
-					<th colspan="2" align="center">URL</th>
-					<th colspan="2" align="center">Type</th>
-				</tr>
-				<url>
-					<tr>
-						<th align="right"/>
-						<td colspan="2">
-							<url>http://kinoma.com/develop/documentation/tutorials/ble-miselu-keyboard/</url>
-						</td>
-						<td colspan="2" align="center">
-							<type>Tutorial</type>
-						</td>
-					</tr>
-				</url>
-				<url>
-					<tr>
-						<th align="right"/>
-						<td colspan="2">
-							<url>http://kinoma.com/develop/documentation/tutorials/ble-griffin-pm/</url>
-						</td>
-						<td colspan="2" align="center">
-							<type>Tutorial</type>
-						</td>
-					</tr>
-				</url>
-				<url>
-					<tr>
-						<th align="right"/>
-						<td colspan="2">
-							<url>http://kinoma.com/develop/documentation/tutorials/ble-satechi-iq-plug/</url>
-						</td>
-						<td colspan="2" align="center">
-							<type>Tutorial</type>
-						</td>
-					</tr>
-				</url>
-			</urls>
-		</tbody>
-	</table>
-	</x-app-info>
+
