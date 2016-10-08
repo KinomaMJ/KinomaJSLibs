@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="metadataStyler.xsl"?>
+<x-extension-info id="78" name="Kinoma JPEG Decoder" platforms="mac,windows,linux" path="./makefiles">
+	<dependency path="/kinoma/kinoma/mediareader/"/>
+	<platform name="mac" path="./makefiles/mac">
+		<dependency path="some/dependency" require="weak"/>
+	</platform>
+	<footprint type="file" value="126616"> <!-- default value; element could be empty -->
+		<platform name="linux/gtk" size="138090"/> <!-- platform-specific override, if data becomes available -->
+	</footprint>
+	<category values="['Media', 'File', 'Image', 'Video']"/>
+	<link type="Tech Note" title="Introducing the KinomaJS Open Source Implementation - Media" url="kinoma.com/.../introducing-the-kinomajs-open-source-implementation/#introducing-the-kinomajs-open-source-implementation-media"/>
+	<link type="Example" title="KPR-Examples - camera" url="https://github.com/Kinoma/KPR-examples/tree/master/camera"/>
+</x-extension-info>
